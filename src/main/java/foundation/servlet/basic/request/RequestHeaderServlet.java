@@ -13,7 +13,7 @@ import java.util.Enumeration;
 public class RequestHeaderServlet extends HttpServlet {
 
     @Override
-    protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException {
         printStartLine(request);
         printHeaders(request);
         printHeaderUtils(request);
